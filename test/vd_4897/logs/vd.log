@@ -1,0 +1,93 @@
+Sun Mar 25 16:23:36 IDT 2018
+sgecs20.cs.bgu.ac.il
+/home/cluster/users/siditom/code/meshiMC/test/vd_4897
+/home/cluster/users/siditom/code/meshiMC/test/vd_4897
+assembleVData
+cd /home/cluster/users/siditom/code/meshiMC/test/vd_4897; addpath /home/cluster/users/siditom/code/meshiMC/scripts/mat; addpath /home/cluster/users/siditom/code/meshiMC/mat; assembleVData; exit;
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+VD_T0549.mat
+VD_T0555.mat
+VD_T0558.mat
+VD_T0564.mat
+VD_T0570.mat
+VD_T0571.mat
+VD_T0574.mat
+VD_T0575.mat
+VD_T0577.mat
+VD_T0584.mat
+VD_T0586.mat
+VD_T0589.mat
+VD_T0590.mat
+VD_T0606.mat
+VD_T0607.mat
+VD_T0609.mat
+VD_T0615.mat
+VD_T0616.mat
+VD_T0617.mat
+VD_T0620.mat
+VD_T0628.mat
+VD_T0635.mat
+VD_T0638.mat
+VD_T0643.mat
+VD_T0644.mat
+VD_T0649.mat
+VD_T0663.mat
+VD_T0666.mat
+VD_T0678.mat
+VD_T0681.mat
+VD_T0684.mat
+VD_T0689.mat
+VD_T0691.mat
+VD_T0694.mat
+VD_T0703.mat
+VD_T0704.mat
+VD_T0719.mat
+VD_T0733.mat
+VD_T0739.mat
+VD_T0743.mat
+VD_T0745.mat
+VD_T0752.mat
+VD_T0753.mat
+VD_T0757.mat
+VD_T0765.mat
+VD_T0767.mat
+VD_T0770.mat
+VD_T0773.mat
+VD_T0776.mat
+VD_T0781.mat
+VD_T0783.mat
+VD_T0787.mat
+VD_T0796.mat
+VD_T0800.mat
+VD_T0806.mat
+VD_T0816.mat
+VD_T0817.mat
+VD_T0821.mat
+VD_T0828.mat
+VD_T0831.mat
+VD_T0841.mat
+VD_T0848.mat
+VD_T0849.mat
+VD_T0854.mat
+VD_T0857.mat
+VD_T0858.mat
+VD_T0866.mat
+VD_T0877.mat
+VD_T0889.mat
+VD_T0903.mat
+VD_T0904.mat
+VD_T0921.mat
+VD_T0928.mat
+VD_T0930.mat
+VD_T0942.mat
+VD_T0948.mat

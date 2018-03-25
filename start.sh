@@ -1,5 +1,32 @@
 #!/bin/sh
 
+function print_help(){
+  echo "USAGE: meshiMC [OPTION]"
+  echo "[-ca]  Create configuration array."
+  echo "[-vd]  Create validation data."
+}
+
+
+
 source /home/cluster/users/siditom/code/meshiMC/data/setEnv.sh
 
-$APP_PATH/scripts/submitCA.sh 1 params/CASP13_params.m CASP13_Score
+if [ $# -lt 1 ] || [ "$1" = "-help" ]; then
+  print_help
+  exit
+fi
+
+if [ "$1" = "-ca" ];then
+  $APP_PATH/scripts/submitCA.sh 3 params/pv_test.m test
+  exit
+fi
+
+if [ "$1" = "-vd" ] && [ $# -eq 3 ];then
+  $APP_PATH/scripts/submitVD.sh $2 $3 
+  exit
+else if [ "$1" = "-vd" ] && [ $# -ne 3 ]; then
+  $APP_PATH/scripts/submitVD.sh
+  exit
+fi
+fi
+
+print_help

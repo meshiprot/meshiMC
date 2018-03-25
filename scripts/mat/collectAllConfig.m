@@ -2,6 +2,9 @@
 
 
 function collectTestData(name)
+	if (nargin < 1)
+		name = 'Configurations';
+	end
 	cd(name);
 	test_folder = dir();
 	isub = [test_folder(:).isdir]; %# returns logical vector
@@ -30,7 +33,7 @@ function collectTestData(name)
 	
 	cd .. ;
 	save(['ca.mat'],'ca');
-		
+ 	movefile([name filesep 'pv.m'],'pv.m');
 		
 
 end

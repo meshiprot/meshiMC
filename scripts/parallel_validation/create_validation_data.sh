@@ -43,7 +43,7 @@ do
       #echo "score.sh `pwd` ca.mat $data_path/$target_name VD_$target_name $run_folder" 
     job_name=${run_folder}_${target_name}
 
-      qsub -N $job_name -hold_jid $hold_jobs -q intel_all.q -e `pwd -P`/logs/$target_name.error -o `pwd -P`/logs/$target_name.log $APP_PATH/score.sh `pwd -P` ca.mat $target_name VD_$target_name $run_folder 
+      qsub -N $job_name -hold_jid $hold_jobs -q $servers -e `pwd -P`/logs/$target_name.error -o `pwd -P`/logs/$target_name.log $APP_PATH/score.sh `pwd -P` ca.mat $target_name VD_$target_name $run_folder 
     
     current_jobs="${current_jobs},${job_name}"
 done

@@ -1,0 +1,17 @@
+Sun Mar 25 13:32:21 IDT 2018
+sgecs43.cs.bgu.ac.il
+/home/cluster/users/siditom/code/meshiMC/test
+/home/cluster/users/siditom/code/meshiMC/test
+collectAllConfig
+cd /home/cluster/users/siditom/code/meshiMC/test; addpath /home/cluster/users/siditom/code/meshiMC/scripts/mat; addpath /home/cluster/users/siditom/code/meshiMC/mat; collectAllConfig; exit;
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
