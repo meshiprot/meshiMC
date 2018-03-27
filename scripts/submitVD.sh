@@ -28,4 +28,5 @@ cd $vdDir
 logs=`pwd -P`/logs
 mkdir $logs
 
-qsub -l h_vmem=6G -cwd -S /bin/sh -V -N submitVD -o $logs/submitVD.log -e $logs/submitVD.error $APP_PATH/scripts/VD2.sh $logs $vdDir
+${APP_PATH}/scripts/qWait.sh $MJobs $tIntervalConfig 
+qsub -l h_vmem=6G -cwd -S /bin/sh -V -N submitVD -o $logs/submitVD.log -e $logs/submitVD.error $APP_PATH/scripts/parallelVD.sh $logs $vdDir

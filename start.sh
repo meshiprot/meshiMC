@@ -4,6 +4,7 @@ function print_help(){
   echo "USAGE: meshiMC [OPTION]"
   echo "[-ca]  Create configuration array."
   echo "[-vd]  Create validation data."
+  echo "[-cv]  Cross-validation - Not Supported Yet."
 }
 
 
@@ -28,5 +29,11 @@ else if [ "$1" = "-vd" ] && [ $# -ne 3 ]; then
   exit
 fi
 fi
+
+if [ "$1" = "-cv" ] && [ $# -eq 3 ];then
+  $APP_PATH/scripts/submitCV.sh 
+  exit
+fi
+
 
 print_help
