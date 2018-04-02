@@ -1,10 +1,11 @@
 
 
-
-function collectTestData(name)
-	if (nargin < 1)
+%% arg is name or caSizeTest.
+function collectTestData(caSizeTestStr)
+%	if (nargin < 1)
 		name = 'Configurations';
-	end
+%	end
+	caSizeTest = num2str(caSizeTestStr);
 	cd(name);
 	test_folder = dir();
 	isub = [test_folder(:).isdir]; %# returns logical vector
@@ -30,10 +31,10 @@ function collectTestData(name)
 		end
 	end
 
-	
-	cd .. ;
-	save(['ca.mat'],'ca');
- 	movefile([name filesep 'pv.m'],'pv.m');
-		
+        if (length(ca) ~= caSizeTest)	
+		cd .. ;
+		save(['ca.mat'],'ca');
+ 		movefile([name filesep 'pv.m'],'pv.m');
+	end
 
 end

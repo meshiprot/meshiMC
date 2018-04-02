@@ -1,13 +1,15 @@
 % exPath='../experimentData.mat';
-exPath = '/home/cluster/users/siditom/data/meshi_db_v2.0/experimentData.meshiDBv2.0_train.mat';
+exPath = '/home/cluster/users/siditom/data/meshi_db_v2.0/experimentData.meshiDBv2.0.mat';
 numberOfCoefsRange = 10;
 normalizers = {'length' 'contacts8' 'contacts15'};
 nonZeroCoefsNum = 15;
-numOfConfigsInArray = 1;
  MCMCSteps = 3;
 % MCMCSteps = 1000;
 initialTemp = 0.001;
 % seed = 1;
+
+cvJobs = 3;
+numOfConfigsInArray = 1;
 
 learningFraction = 0.5;
 objectiveFunction = 'gdt_ts';

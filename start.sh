@@ -30,8 +30,8 @@ else if [ "$1" = "-vd" ] && [ $# -ne 3 ]; then
 fi
 fi
 
-if [ "$1" = "-cv" ] && [ $# -eq 3 ];then
-  $APP_PATH/scripts/submitCV.sh 
+if [ "$1" = "-cv" ] && [ $# -ge 4 ];then
+  $APP_PATH/scripts/submitCV.sh $2 $3 ${@:4}
   exit
 fi
 

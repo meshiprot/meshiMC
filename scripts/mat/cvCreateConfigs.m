@@ -4,18 +4,15 @@
 % This file specifies the parameters for the CoefOptimization.repeatedCoefOptimization program.
 % It will be added to the CopyrightAndReadme field of the resulted experimentData object.
 % ********************************************************************************************
-function createConfigs(seed,iFold)
+function createConfigs(seed,nFold)
  tic
 	pv
 	load(exPath);
         if ( nargin > 1 )
-		load(['../../experimentDataPartitions.mat']);
-		exData = experimentData.extractTargets(experimentDataPartitions.trainSetArray{iFold},['train_set.' num2str(iFold)]);
-		experimentData = exData.duplicate(exData.name);
-		
+		load(['experimentDataPartitions.' num2str(partition_seed) '.mat']);
+		exData = expeimentData.extractTargets(experimentDataPartitions.trainSetArray{fold_num},['train_set.' num2str(fold_num)]);
+		exData = exData.duplicate(exData.name);
 	end
-	
-
         CO = CoefOptimization(experimentData,'myCoefOptimization.m');
 	CO.numberOfCoefsRange = numberOfCoefsRange;
 	CO.configEnergy = configEnergy;

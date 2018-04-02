@@ -433,12 +433,12 @@ classdef ExperimentData < handle
          % in experimentData 
          % to train/test sets using the randomStream variable. it also
          % saves the new data array to disk.
-         function xFoldData = create_XFold_testingData(experimentData,num_of_folds,randomStream)
+         function xFoldData = create_XFold_testingData(experimentData,num_of_folds,seed)
             disp(experimentData);
 	    foldFraction = (1/num_of_folds);
-            seed = randomStream.Seed;
+            
             target_names = experimentData.getTargetNames();
-            folds = experimentData.partitionExDataToFolds(foldFraction,randomStream);
+            folds = experimentData.partitionExDataToFolds(foldFraction,seed);
             for i = 1:num_of_folds
                
                 %xFoldData.trainSetArray{i} = experimentData.extractTargets(remaining_targetNames,['trainSet_' num2str(i)]);
@@ -448,7 +448,7 @@ classdef ExperimentData < handle
             end
             xFoldData.seed = seed;
             experimentDataPartitions = xFoldData;
-            save(['experimentDataPartitions.' num2str(seed) '.mat'],'experimentDataPartitions');
+            save(['experimentDataPartitions.mat'],'experimentDataPartitions');
             
          end
         
