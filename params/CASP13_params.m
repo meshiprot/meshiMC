@@ -1,9 +1,14 @@
 % exPath='../experimentData.mat';
+% CASP13 params
+
 exPath = '/home/cluster/users/siditom/data/meshi_db_v2.0/experimentData.meshiDBv2.0.mat';
 numberOfCoefsRange = 10;
 normalizers = {'length' 'contacts8' 'contacts15' 'coverage'};
 nonZeroCoefsNum = 15;
+
+cvJobs = 500;
 numOfConfigsInArray = 2;
+
 MCMCSteps = 3000;
 % MCMCSteps = 1000;
 initialTemp = 0.001;
