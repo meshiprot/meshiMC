@@ -5,8 +5,8 @@ numberOfCoefsRange = 10;
 normalizers = {'length' 'contacts8' 'contacts15'};
 nonZeroCoefsNum = 15;
 
-cvJobs = 50;
-numOfConfigsInArray = 20;
+cvJobs = 200;
+numOfConfigsInArray = 5;
 
 MCMCSteps = 3000;
 % MCMCSteps = 1000;
